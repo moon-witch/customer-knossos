@@ -1,0 +1,45 @@
+{
+  "header": {
+    "info": "Erleben Sie authentische griechische Aromen, zubereitet mit täglich frischem Fisch und serviert zu fairen, ehrlichen Preisen.",
+    "cta": "Speisekarte"
+  },
+  "about": {
+    "label": "UNSERE GESCHICHTE",
+    "headline": "Eine Familientradition am Meer",
+    "p1": "Seit mehr als drei Jahrzehnten ist unser Familienname mit diesem Ort an der kretischen Küste verbunden. Nachdem die Taverne mehrere Jahre geschlossen war, wurde sie 2021 von der nächsten Generation wiedereröffnet und führt damit das Erbe fort, das zuvor über Jahrzehnte hinweg liebevoll von den Eltern der heutigen Besitzer gepflegt wurde.",
+    "p2": "Was einst als kleine Küche am Meer begann, ist erneut zu einem einladenden Ort geworden, an dem traditionelle kretische Gerichte nach überlieferten Rezepten zubereitet werden. Täglich werden frische Speisen aus sorgfältig ausgewählten lokalen Zutaten hergestellt, darunter auch Gemüse aus eigenem Anbau, was Qualität, Authentizität und echten saisonalen Geschmack garantiert.",
+    "p3": "Die Familie arbeitet weiterhin Seite an Seite und bewahrt die Werte, die die Taverne von Anfang an geprägt haben: ehrliche Küche, respektvoller Service und eine warme Atmosphäre, in der sich Gäste entspannen und wohlfühlen können. Auch wenn sich Geschmäcker verändern, bleibt unser Engagement für Tradition, Frische und echte Gastfreundschaft unverändert.",
+    "p4": "Dies ist der Geist, der unsere Taverne auszeichnet – ein Ort, an dem Tradition weiterlebt und neue Erinnerungen entstehen."
+  },
+  "rating": {
+    "headline": "Was unsere Gaeste sagen",
+    "mapLink": "Auf Google Maps ansehen"
+  },
+  "gallery": {
+    "headline": "Galerie"
+  },
+  "findUs": {
+    "headline": "So finden Sie uns",
+    "location": "Standort",
+    "address": "Nikolaou Grammatikaki, Malia, Kreta 70007, Griechenland",
+    "contact": "Kontakt",
+    "phone": "+30 694 329 1233",
+    "seasonal": {
+      "headline": "Saisonbetrieb",
+      "info": "Geschlossen von November bis April. Wir heißen unsere Gäste ab Anfang Mai wieder willkommen."
+    },
+    "openingHours": "Öffnungszeiten",
+    "sunday": "Sonntag",
+    "monday": "Montag",
+    "tuesday": "Dienstag",
+    "wednesday": "Mittwoch",
+    "thursday": "Donnerstag",
+    "friday": "Freitag",
+    "saturday": "Samstag"
+  },
+  "footer": {
+    "imprint": "Impressum",
+    "disclaimer": "Haftungsausschluss"
+  },
+  "creator": "erstellt von"
+}

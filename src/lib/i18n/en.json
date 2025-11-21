@@ -1,0 +1,45 @@
+{
+  "header": {
+    "info": "Experience authentic Greek flavors, crafted with fresh daily seafood and served at fair, honest prices.",
+    "cta": "Menu"
+  },
+  "about": {
+    "label": "OUR STORY",
+    "headline": "A Family Tradition by the Sea",
+    "p1": "For more than three decades, our family name has been connected to this place on the Cretan coast. After being closed for several years, the taverna was reopened in 2021 by the next generation, continuing the legacy first established and lovingly maintained for decades by the parents of the current owners.",
+    "p2": "What began as a small seaside kitchen has once again become a welcoming destination, offering traditional Cretan dishes prepared with time-honored recipes. Every day, fresh food is prepared using carefully selected local ingredients, including vegetables grown on our own land, ensuring quality, authenticity, and true seasonal flavor.",
+    "p3": "The family continues to work side by side, preserving the same values that defined the taverna from the beginning: honest cooking, respectful service, and a warm atmosphere where guests can relax and feel at home. While tastes evolve, our commitment to tradition, freshness, and genuine hospitality remains unchanged.",
+    "p4": "This is the spirit that defines our taverna — a place where heritage continues and new memories are created."
+  },
+  "rating": {
+    "headline": "What our guests say",
+    "mapLink": "View on Google Maps"
+  },
+  "gallery": {
+    "headline": "Gallery"
+  },
+  "findUs": {
+    "headline": "How to Find us",
+    "location": "Location",
+    "address": "Nikolaou Grammatikaki, Malia, Crete 70007, Greece",
+    "contact": "Contact",
+    "phone": "+30 694 329 1233",
+    "seasonal": {
+      "headline": "Seasonal Operation",
+      "info": "Closed from November to April. We welcome guests again from early May."
+    },
+    "openingHours": "Opening Hours",
+    "sunday": "Sunday",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday"
+  },
+  "footer": {
+    "imprint": "Imprint",
+    "disclaimer": "Disclaimer"
+  },
+  "creator": "built by"
+}

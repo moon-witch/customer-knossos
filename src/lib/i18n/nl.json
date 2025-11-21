@@ -1,0 +1,45 @@
+{
+  "header": {
+    "info": "Geniet van authentieke Griekse smaken, bereid met dagelijks verse vis en geserveerd tegen eerlijke, betaalbare prijzen.",
+    "cta": "Menu"
+  },
+  "about": {
+    "label": "ONS VERHAAL",
+    "headline": "Een familietraditie aan zee",
+    "p1": "Al meer dan drie decennia is onze familienaam verbonden met deze plek aan de Kretenzische kust. Nadat de taverna jarenlang gesloten was, werd zij in 2021 heropend door de volgende generatie, waarmee het erfgoed werd voortgezet dat gedurende vele jaren met zorg werd opgebouwd en onderhouden door de ouders van de huidige eigenaren.",
+    "p2": "Wat ooit begon als een kleine keuken aan zee, is opnieuw uitgegroeid tot een gastvrije bestemming waar traditionele Kretenzische gerechten worden bereid volgens beproefde recepten. Dagelijks worden verse maaltijden bereid met zorgvuldig geselecteerde lokale ingrediënten, waaronder groenten van ons eigen land, wat kwaliteit, authenticiteit en echte seizoenssmaken garandeert.",
+    "p3": "De familie werkt nog steeds zij aan zij en behoudt de waarden die de taverna vanaf het begin kenmerken: eerlijke keuken, respectvolle service en een warme sfeer waarin gasten zich kunnen ontspannen en thuis voelen. Hoewel smaken evolueren, blijft onze toewijding aan traditie, versheid en oprechte gastvrijheid onveranderd.",
+    "p4": "Dit is de geest die onze taverna definieert – een plek waar erfgoed voortleeft en nieuwe herinneringen worden gecreëerd."
+  },
+  "rating": {
+    "headline": "Wat onze gasten zeggen",
+    "mapLink": "Bekijk op Google Maps"
+  },
+  "gallery": {
+    "headline": "Galerij"
+  },
+  "findUs": {
+    "headline": "Hoe u ons kunt vinden",
+    "location": "Locatie",
+    "address": "Nikolaou Grammatikaki, Malia, Kreta 70007, Griekenland",
+    "contact": "Contact",
+    "phone": "+30 694 329 1233",
+    "seasonal": {
+      "headline": "Seizoensgebonden opening",
+      "info": "Gesloten van november tot april. Wij verwelkomen onze gasten opnieuw vanaf begin mei."
+    },
+    "openingHours": "Openingstijden",
+    "sunday": "Zondag",
+    "monday": "Maandag",
+    "tuesday": "Dinsdag",
+    "wednesday": "Woensdag",
+    "thursday": "Donderdag",
+    "friday": "Vrijdag",
+    "saturday": "Zaterdag"
+  },
+  "footer": {
+    "imprint": "Colofon",
+    "disclaimer": "Disclaimer"
+  },
+  "creator": "gebouwd door"
+}

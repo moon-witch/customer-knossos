@@ -1,0 +1,8 @@
+@use "./fonts/fonts.scss";
+
+:global(html, body) {
+    margin: 0;
+    padding: 0;
+    background: oklch(0.772 0.062 38.852);
+    font-family: sans-serif;
+}
