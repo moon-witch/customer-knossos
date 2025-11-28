@@ -5,6 +5,7 @@
     import MenuOverlay from "$lib/components/MenuOverlay.svelte";
     import CTAMenu from "$lib/components/buttons/CTAMenu.svelte";
     import { _ } from 'svelte-i18n';
+    import CTAGuestbook from "$lib/components/buttons/CTAGuestbook.svelte";
 
     let menuOverlay: MenuOverlay;
     let headerEl: HTMLDivElement;
@@ -93,6 +94,7 @@
     </div>
     <div class="cta-menu-button">
         <CTAMenu on:open={openMenu} />
+        <CTAGuestbook />
     </div>
     <MenuOverlay bind:this={menuOverlay} />
 </div>
@@ -173,7 +175,7 @@
 
     @media (min-width: 768px) {
       margin-top: 3rem;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
     }
 
     svg {
@@ -189,6 +191,12 @@
 
   .cta-menu-button {
     margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
 
     button {
       font-size: 1rem;

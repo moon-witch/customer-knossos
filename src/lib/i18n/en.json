@@ -1,7 +1,26 @@
 {
   "header": {
     "info": "Experience authentic Greek flavors, crafted with fresh daily seafood and served at fair, honest prices.",
-    "cta": "Menu"
+    "cta": {
+      "menu": "Menu",
+      "guestbook": "Guestbook"
+    }
+  },
+  "guestbook": {
+    "headline": "Guestbook",
+    "info": "Memories and thoughts from our guests.",
+    "cta": "Leave a message",
+    "back": "Back",
+    "loading": "Loading entries...",
+    "modal": {
+      "headline": "Add your guestbook entry",
+      "name": "Name",
+      "message": "Message",
+      "image": "Image (optional)",
+      "submit": "Submit",
+      "loading": "Submitting...",
+      "cancel": "Cancel"
+    }
   },
   "about": {
     "label": "OUR STORY",

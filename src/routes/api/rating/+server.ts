@@ -1,5 +1,6 @@
 import { json } from '@sveltejs/kit';
 import { GOOGLE_MAPS_API } from '$env/static/private';
+import {BUCKET} from "$lib/utils/minio.ts";
 
 export async function GET() {
     try {

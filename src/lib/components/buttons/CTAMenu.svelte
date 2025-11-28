@@ -10,7 +10,7 @@
 </script>
 
 <button class="menu-button" on:click={handleClick}>
-    {$_('header.cta')}
+    {$_('header.cta.menu')}
 </button>
 
 <style lang="scss">

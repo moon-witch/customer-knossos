@@ -1,7 +1,26 @@
 {
   "header": {
     "info": "Erleben Sie authentische griechische Aromen, zubereitet mit täglich frischem Fisch und serviert zu fairen, ehrlichen Preisen.",
-    "cta": "Speisekarte"
+    "cta": {
+      "menu": "Menue",
+      "guestbook": "Gaestebuch"
+    }
+  },
+  "guestbook": {
+    "headline": "Gaestebuch",
+    "info": "Erinnerungen und Gedanken unserer Gäste.",
+    "cta": "Eine Nachricht hinterlassen",
+    "back": "Zurück",
+    "loading": "Einträge werden geladen...",
+    "modal": {
+      "headline": "Gaestebucheintrag hinzufuegen",
+      "name": "Name",
+      "message": "Nachricht",
+      "image": "Bild (optional)",
+      "submit": "Absenden",
+      "loading": "Wird gesendet...",
+      "cancel": "Abbrechen"
+    }
   },
   "about": {
     "label": "UNSERE GESCHICHTE",

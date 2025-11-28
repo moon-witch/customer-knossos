@@ -9,9 +9,6 @@
 </script>
 
 <div class="container">
-    <div class="lang-switcher">
-        <LangSwitcher />
-    </div>
     <Hero />
     <About />
     <Rating />
@@ -21,10 +18,4 @@
 </div>
 
 <style lang="scss">
-    .lang-switcher {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      z-index: 1000;
-    }
 </style>

@@ -1,7 +1,26 @@
 {
   "header": {
     "info": "Geniet van authentieke Griekse smaken, bereid met dagelijks verse vis en geserveerd tegen eerlijke, betaalbare prijzen.",
-    "cta": "Menu"
+    "cta": {
+      "menu": "Menu",
+      "guestbook": "Gastenboek"
+    }
+  },
+  "guestbook": {
+    "headline": "Gastenboek",
+    "info": "Herinneringen en gedachten van onze gasten.",
+    "cta": "Een bericht achterlaten",
+    "back": "Terug",
+    "loading": "Items worden geladen...",
+    "modal": {
+      "headline": "Voeg je gastenboekbericht toe",
+      "name": "Naam",
+      "message": "Bericht",
+      "image": "Afbeelding (optioneel)",
+      "submit": "Verzenden",
+      "loading": "Wordt verzonden...",
+      "cancel": "Annuleren"
+    }
   },
   "about": {
     "label": "ONS VERHAAL",
