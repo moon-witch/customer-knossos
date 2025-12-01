@@ -1,5 +1,6 @@
 <script lang="ts">
     import Header from "$lib/components/Header.svelte";
+    import frontal from "$lib/assets/images/knossos-frontal.jpg"
 
 
 </script>
@@ -9,7 +10,7 @@
         <Header />
     </section>
     <img
-            src="../assets/images/knossos-frontal.jpg"
+            src={frontal}
             alt="frontal of the taverna knossos"
             class="hero-image"
     />
