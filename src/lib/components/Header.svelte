@@ -174,7 +174,7 @@
     margin-bottom: 2rem;
 
     @media (min-width: 768px) {
-      margin-top: 3rem;
+      margin-top: 1rem;
       margin-bottom: 3rem;
     }
 

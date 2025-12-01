@@ -2,10 +2,9 @@ import type { RequestHandler } from '@sveltejs/kit';
 import { minio, BUCKET } from '$lib/utils/minio';
 import { db } from '$lib/server/db';
 import { randomUUID } from 'crypto';
+import { env } from '$env/dynamic/private';
 
-/* =========================
-   GET ALL ENTRIES
-   ========================= */
+/* GET ENTRIES */
 export const GET: RequestHandler = async () => {
     const { rows } = await db.query(`
         SELECT id, name, message, image_url, created_at
@@ -20,15 +19,35 @@ export const GET: RequestHandler = async () => {
     });
 };
 
-/* =========================
-   CREATE ENTRY
-   ========================= */
+/* POST ENTRY */
 export const POST: RequestHandler = async ({ request }) => {
     const formData = await request.formData();
 
     const name = formData.get('name');
     const message = formData.get('message');
     const imageEntry = formData.get('image');
+    const cf_token = formData.get('cf_token');
+
+    if (!cf_token || typeof cf_token !== 'string') {
+        return new Response('Missing Turnstile token', { status: 400 });
+    }
+
+    // -------------------------------
+    // Turnstile verification
+    // -------------------------------
+    const verifyRes = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+        method: 'POST',
+        body: new URLSearchParams({
+            secret: env.TURNSTILE_SECRET_KEY!,
+            response: cf_token
+        })
+    });
+
+    const out = await verifyRes.json();
+
+    if (!out.success) {
+        return new Response('Turnstile verification failed', { status: 403 });
+    }
 
     if (typeof name !== 'string' || typeof message !== 'string') {
         return new Response('Name and message required', { status: 400 });
@@ -64,12 +83,10 @@ export const POST: RequestHandler = async ({ request }) => {
     });
 };
 
-/* =========================
-   DELETE ENTRY
-   ========================= */
+/* DELETE ENTRY */
 export const DELETE: RequestHandler = async ({ url }) => {
     const id = url.searchParams.get('id');
-    const keyword = url.searchParams.get('keyword')
+    const keyword = url.searchParams.get('keyword');
 
     if (keyword !== 'Taverna_Knossos_Admin_2026') {
         return new Response('Wrong keyword', { status: 400 });

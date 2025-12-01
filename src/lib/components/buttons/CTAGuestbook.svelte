@@ -11,10 +11,10 @@
     border: 3px solid $primary;
     border-radius: 4px;
     background: $background;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
     color: $primary;
     font-family: "Gelio Greek Diner", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     outline: 1px solid $primary;
     transition: outline 0.1s;
@@ -22,6 +22,7 @@
 
     @media (min-width: 768px) {
       font-size: 2.5rem;
+      padding: 1rem 2rem;
     }
 
     &:hover {
