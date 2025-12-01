@@ -20,7 +20,7 @@
     let widgetId: any = null;
     let container: HTMLDivElement | null = null;
 
-    // Load script only on client
+    /* Load Turnstile script only client-side */
     function loadTurnstileScript(): Promise<void> {
         if (!browser) return Promise.resolve();
 
@@ -39,8 +39,7 @@
     }
 
     async function renderTurnstile() {
-        if (!browser) return;
-        if (!container) return;
+        if (!browser || !container) return;
 
         await loadTurnstileScript();
 
@@ -63,8 +62,9 @@
         turnstileToken = '';
     }
 
-    // Reactively handle open/close without SSR crash
+    /* Reactive modal open/close logic */
     $: if (browser && open) {
+        error = '';
         setTimeout(() => renderTurnstile(), 0);
     } else if (browser && !open) {
         resetTurnstile();
@@ -78,6 +78,9 @@
         dispatch('close');
     }
 
+    /* ----------------------------------------------------------
+       Enhanced submit with precise backend error handling
+       ---------------------------------------------------------- */
     async function submit() {
         if (!name || !message) {
             error = 'Please provide your name and a message.';
@@ -104,16 +107,44 @@
                 body: formData
             });
 
-            if (!res.ok) throw new Error('Failed');
+            // SUCCESS
+            if (res.ok) {
+                name = '';
+                message = '';
+                image = null;
+                turnstileToken = '';
 
-            name = '';
-            message = '';
-            image = null;
-            turnstileToken = '';
+                close();
+                return;
+            }
 
-            close();
-        } catch (e) {
+            // ERROR HANDLING BASED ON SERVER STATUS
+            if (res.status === 400) {
+                // backend returns plain text messages
+                const msg = await res.text();
+
+                if (msg.includes('unsafe') || msg.includes('Inappropriate')) {
+                    error = 'Your message contains inappropriate or unsafe content.';
+                } else if (msg.includes('required')) {
+                    error = 'Please fill in all required fields.';
+                } else {
+                    error = msg || 'Invalid request.';
+                }
+
+                return;
+            }
+
+            if (res.status === 403) {
+                error = 'Verification failed. Please complete the Turnstile challenge again.';
+                resetTurnstile();
+                await renderTurnstile();
+                return;
+            }
+
+            // fallback for any unexpected status message
             error = 'Submission failed. Please try again.';
+        } catch (e) {
+            error = 'A network error occurred. Please try again.';
         } finally {
             loading = false;
         }
@@ -158,7 +189,7 @@
             </label>
 
             <!-- Turnstile -->
-            <div bind:this={container}></div>
+            <div bind:this={container} class="turnstile"></div>
 
             <div class="actions">
                 <button type="button" on:click={close}>
@@ -246,5 +277,9 @@
     .error {
         color: #b00020;
         font-size: 0.85rem;
+    }
+
+    .turnstile {
+        align-self: center;
     }
 </style>

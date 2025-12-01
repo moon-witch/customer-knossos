@@ -3,6 +3,7 @@ import { minio, BUCKET } from '$lib/utils/minio';
 import { db } from '$lib/server/db';
 import { randomUUID } from 'crypto';
 import { env } from '$env/dynamic/private';
+import { containsUnsafeContent } from '$lib/utils/profanityFilter.ts';
 
 /* GET ENTRIES */
 export const GET: RequestHandler = async () => {
@@ -32,9 +33,9 @@ export const POST: RequestHandler = async ({ request }) => {
         return new Response('Missing Turnstile token', { status: 400 });
     }
 
-    // -------------------------------
-    // Turnstile verification
-    // -------------------------------
+    /* -------------------------------------------------------
+       Turnstile verification
+       ------------------------------------------------------- */
     const verifyRes = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
         method: 'POST',
         body: new URLSearchParams({
@@ -51,6 +52,15 @@ export const POST: RequestHandler = async ({ request }) => {
 
     if (typeof name !== 'string' || typeof message !== 'string') {
         return new Response('Name and message required', { status: 400 });
+    }
+
+    /* -------------------------------------------------------
+       Profanity + Injection Filter
+       ------------------------------------------------------- */
+    if (containsUnsafeContent(name) || containsUnsafeContent(message)) {
+        return new Response('Inappropriate or unsafe content detected', {
+            status: 400
+        });
     }
 
     let imageFilename: string | null = null;

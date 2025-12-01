@@ -951,6 +951,11 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
+"@types/leo-profanity@^1.5.5":
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/@types/leo-profanity/-/leo-profanity-1.5.5.tgz#bd114052c0f557a5df06173b8c10f0a09babef9e"
+  integrity sha512-Cu9m2tXw3oJIQMIgT1qggRp0mlFNYkYxOGU/NRAyVDZ4mRdY6+AybE9lhy54s12ws5BJRRA+qkZhNCFrkij16g==
+
 "@types/node@*":
   version "24.10.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-24.10.1.tgz#91e92182c93db8bd6224fca031e2370cef9a8f01"
@@ -1830,6 +1835,11 @@ for-each@^0.3.5:
   dependencies:
     is-callable "^1.2.7"
 
+french-badwords-list@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/french-badwords-list/-/french-badwords-list-1.0.7.tgz#8ed2442cb20fa2781c38b5a75c944f8e91a73c08"
+  integrity sha512-H1ziKs2PJh2+UXZ9oCGJ/rRQpsI9NBykGf2Sc7WaKaj1OnWFuBXfsvANTdRcfVmOghGQaUmRyZ1hJOPbDpy04Q==
+
 fsevents@2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
@@ -2129,6 +2139,14 @@ known-css-properties@^0.37.0:
   version "0.37.0"
   resolved "https://registry.yarnpkg.com/known-css-properties/-/known-css-properties-0.37.0.tgz#10ebe49b9dbb6638860ff8a002fb65a053f4aec5"
   integrity sha512-JCDrsP4Z1Sb9JwG0aJ8Eo2r7k4Ou5MwmThS/6lcIe1ICyb7UBJKGRIUUdqc2ASdE/42lgz6zFUnzAIhtXnBVrQ==
+
+leo-profanity@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/leo-profanity/-/leo-profanity-1.8.0.tgz#2ce6522e27c093d02253cdb9755b74cc7ffccf90"
+  integrity sha512-TATupbZhT3oFCtsiEXzgXcLvW6cDPhDtN+0yQAibjwBdSw3WJFLKM0DZ18eEW8KeFTT10x8gCP+DDZz0cI4Bfg==
+  optionalDependencies:
+    french-badwords-list "^1.0.7"
+    russian-bad-words "^0.5.0"
 
 levn@^0.4.1:
   version "0.4.1"
@@ -2652,6 +2670,11 @@ run-parallel@^1.1.9:
   integrity sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==
   dependencies:
     queue-microtask "^1.2.2"
+
+russian-bad-words@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/russian-bad-words/-/russian-bad-words-0.5.0.tgz#d4abcdc55f7af37606cdbac44bcb9e0bde6c3855"
+  integrity sha512-euNvEYki6iYYpkNbeudW+lEMMYGEmN7EBwVF8ezlbv0bZoQpVYB7W10cCeUIGV7Ed50sJynLQ0c559q5iI0ejQ==
 
 sade@^1.7.4, sade@^1.8.1:
   version "1.8.1"
