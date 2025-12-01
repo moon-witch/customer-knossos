@@ -40,6 +40,7 @@
 		"vitest-browser-svelte": "^2.0.1"
 	},
 	"dependencies": {
+		"@sveltejs/adapter-node": "^5.4.0",
 		"animejs": "^4.2.2",
 		"minio": "^8.0.6",
 		"pdfjs-dist": "^5.4.394",
