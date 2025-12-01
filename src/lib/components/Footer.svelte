@@ -21,7 +21,7 @@
             <a href={disclaimerLink}>{$_('footer.disclaimer')}</a>
         </div>
     </div>
-    <div class="moonwitch">{$_('creator')} <a href="https://www.moonwitch.art" target="_blank">moonwitch</a><img src="src/lib/assets/images/moon.png" alt="moonwitch logo" class="moonwitch-logo"/></div>
+    <div class="moonwitch">{$_('creator')} <a href="https://www.moonwitch.art" target="_blank">moonwitch</a><img src="../assets/images/moon.png" alt="moonwitch logo" class="moonwitch-logo"/></div>
 </footer>
 
 <style lang="scss">

@@ -9,7 +9,7 @@
         <Header />
     </section>
     <img
-            src="src/lib/assets/images/knossos-frontal.jpg"
+            src="../assets/images/knossos-frontal.jpg"
             alt="frontal of the taverna knossos"
             class="hero-image"
     />
