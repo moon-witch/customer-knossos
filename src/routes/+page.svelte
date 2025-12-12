@@ -5,7 +5,6 @@
     import Gallery from "$lib/components/Gallery.svelte";
     import Footer from "$lib/components/Footer.svelte";
     import FindUs from "$lib/components/FindUs.svelte";
-    import LangSwitcher from "$lib/components/LangSwitcher.svelte";
 </script>
 
 <div class="container">

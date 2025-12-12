@@ -5,7 +5,7 @@
     import 'swiper/element-bundle';
     import LangSwitcher from "$lib/components/LangSwitcher.svelte";
 
-let { children } = $props();
+    let { children } = $props();
 </script>
 
 <svelte:head>
